@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
+import loadingImage from "../loading.svg";
+
 import sanityClient from "../client";
 
 const builder = imageUrlBuilder(sanityClient);
@@ -38,8 +40,14 @@ function Blog() {
       .catch(console.error);
   }, [slug]);
 
-  // @TODO Add a loading icon
-  if (!blogData) return <div>Loading...</div>;
+  if (!blogData)
+    return (
+      <main className="bg-black min-h-screen p-12">
+        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+          <img src={loadingImage} alt="Loading icon" className="w-20 h-20" />
+        </section>
+      </main>
+    );
 
   return (
     <main className="bg-gray-200 min-h-screen p-12">

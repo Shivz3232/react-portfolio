@@ -3,6 +3,8 @@ import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
+import loadingImage from "../loading.svg";
+
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
@@ -29,7 +31,14 @@ function About() {
   }, []);
 
   // @TODO Add a loading icon
-  if (!author) return <div>Loading...</div>;
+  if (!author)
+    return (
+      <main className="bg-black min-h-screen p-12">
+        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+          <img src={loadingImage} alt="Loading icon" className="w-20 h-20" />
+        </section>
+      </main>
+    );
 
   return (
     <main className="relative bg-black min-h-screen p-12">
