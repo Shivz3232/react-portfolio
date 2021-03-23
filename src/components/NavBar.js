@@ -18,20 +18,20 @@ function NavBar() {
           <NavLink
             to="/blogs"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white font-bold hover:text-red-900"
-            activeClassName="bg-red-700"
+            activeClassName="text-red-900"
           >
             Blogs
           </NavLink>
           <NavLink
             to="/project"
-            activeClassName="text-red-100 bg-red-700"
+            activeClassName="text-red-900"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white font-bold hover:text-red-900"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="text-red-100 bg-red-700"
+            activeClassName="text-red-900"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white font-bold hover:text-red-900"
           >
             About
