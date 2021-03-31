@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
 
+import loadingImage from "../loading.svg";
+
 function Project() {
   const [projectData, setProject] = useState(null);
 
@@ -20,6 +22,15 @@ function Project() {
       .then((data) => setProject(data))
       .catch(console.error);
   }, []);
+
+  if (!projectData)
+    return (
+      <main className="bg-black min-h-screen p-12">
+        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+          <img src={loadingImage} alt="Loading icon" className="w-20 h-20" />
+        </section>
+      </main>
+    );
 
   return (
     <main className="bg-black min-h-screen p-12">
