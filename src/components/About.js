@@ -23,14 +23,10 @@ function About() {
             "authorImage": image.asset->url
         }`
       )
-      .then((data) => {
-        console.log(data[0]);
-        setAuthor(data[0]);
-      })
+      .then((data) => setAuthor(data[0]))
       .catch(console.error);
   }, []);
 
-  // @TODO Add a loading icon
   if (!author)
     return (
       <main className="bg-black min-h-screen p-12">
