@@ -9,6 +9,7 @@ import blockContent from "./blockContent";
 import project from "./project";
 import post from "./post";
 import author from "./author";
+import certificate from "./certificate";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,11 +20,12 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    // When added to this list, object types can be used as
+    // { type: 'typename' } in other document schemas
     post,
     author,
     project,
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
+    certificate,
     blockContent,
   ]),
 });

@@ -6,6 +6,7 @@ import Blog from "./components/Blog";
 import Blogs from "./components/Blogs";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import Certificates from "./components/Certificates"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route component={Blog} path="/blogs/:slug" />
         <Route component={Blogs} path="/blogs" />
         <Route component={Project} path="/project" />
+        <Route component={Certificates} path="/certificates" />
       </Switch>
     </BrowserRouter>
   );

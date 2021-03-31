@@ -30,6 +30,13 @@ function NavBar() {
             Projects
           </NavLink>
           <NavLink
+            to="/certificates"
+            activeClassName="text-red-900"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-white font-bold hover:text-red-900"
+          >
+            Certificates
+          </NavLink>
+          <NavLink
             to="/about"
             activeClassName="text-red-900"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-white font-bold hover:text-red-900"
