@@ -402,6 +402,10 @@ p {
     cursor: pointer;
 }
 
+.Resume.dark .credits i{
+    color: #fac5ee;
+}
+
 @media (max-width: 1000px) {
     .resume-container {
         margin: 10px;
