@@ -8,7 +8,7 @@
 }
 
 .Resume{
-    background: #fac5ee;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +16,10 @@
     transition: background 0.1s;
 }
 .Resume.dark {
-    background: #232536;
+    background: black;
 }
 .Resume.dark .right_side {
-    background: #2B2D42;
+    background: #222222;
 }
 .Resume.dark .title2 {
     color: #fff;
@@ -37,13 +37,17 @@
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 55px 55px rgba(0, 0, 0, 0.2);
+}
+
+.Resume.dark .resume-container{
+    box-shadow: 0 55px 55px rgba(255, 255, 255, 0.05);
 }
 
 
 .resume-container .left_side {
     position: relative;
-    background: #2B2D42;
+    background: #222222;
     padding: 40px;
 }
 
@@ -178,7 +182,7 @@
 
 .resume-container .right_side {
     position: relative;
-    background: #f8dff2;
+    background: #ffffff;
     padding: 40px;
     transition: background 0.1s;
 }
@@ -192,7 +196,7 @@
 }
 
 .title2 {
-    color: #2B2D42;
+    color: #222222;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -238,7 +242,7 @@ p {
     box-sizing: border-box;
     line-height: 50px;
     transition: all 0.3s ease-out;
-    color: #2B2D42;
+    color: #222222;
 }
 
 .wrapper .button:nth-child(1):hover .icon {
@@ -297,7 +301,7 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    /*background: #fac5ee;*/
+    /*background: #ffffff;*/
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -310,20 +314,20 @@ p {
 }
 
 .Resume.dark .toggle {
-    background: #2B2D42;
+    background: #222222;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5)
 }
 
 .toggle:before {
     content: "\f186";
     font-family: "Font Awesome 5 Free", serif;
-    color: #2B2D42;
+    color: #222222;
 }
 
 .right_side.dark .toggle:before {
     content: "\f185";
     font-family: "Font Awesome 5 Free", serif;
-    color: #fac5ee;
+    color: #ffffff;
 }
 
 .about .box {
@@ -403,7 +407,7 @@ p {
 }
 
 .Resume.dark .credits i{
-    color: #fac5ee;
+    color: #ffffff;
 }
 
 @media (max-width: 1000px) {
