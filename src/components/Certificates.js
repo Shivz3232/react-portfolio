@@ -63,7 +63,7 @@ function Certificates() {
                     <strong className="font-bold">From</strong>: {document.from}
                   </span>
                 </div>
-                <div className="py-5 flex justify-center">
+                <div className="py-5 flex justify-center w-16 md:w-32 lg:w-48">
                   <Document pdf={document.certificate.asset.url} key={index} />
                 </div>
               </article>
