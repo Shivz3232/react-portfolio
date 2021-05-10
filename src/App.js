@@ -20,9 +20,7 @@ function App() {
         <Route component={Blogs} path="/blogs" />
         <Route component={Project} path="/project" />
         <Route component={Certificates} path="/certificates" />
-        <Route path="/resume">
-          <Resume/>
-        </Route>
+        <Route component={Resume} path="/resume" />
       </Switch>
     </BrowserRouter>
   );
