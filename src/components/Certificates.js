@@ -48,13 +48,13 @@ function Certificates() {
           {certificates &&
             certificates.map((document, index) => (
               <article
-                className="relative md:min-w-0 rounded-lg shadow-xl bg-white p-16"
+                className="relative md:min-w-0 rounded-lg shadow-xl bg-gray-400 p-16"
                 key={index}
               >
-                <h3 className="text-gray-800 text-3xl flex justify-center font-bold mb-2 hover:text-red-700">
+                <h3 className="text-black text-3xl flex justify-center font-bold mb-2 hover:text-red-700">
                   {document.title}
                 </h3>
-                <div className="text-gray-500 flex justify-center space-x-4">
+                <div className="text-gray-600 flex justify-center space-x-4">
                   <span>
                     <strong className="font-bold">Issued</strong>:{" "}
                     {new Date(document.issuedDate).toLocaleDateString()}
@@ -63,7 +63,7 @@ function Certificates() {
                     <strong className="font-bold">From</strong>: {document.from}
                   </span>
                 </div>
-                <div className="py-5 flex justify-center w-16 md:w-32 lg:w-48">
+                <div className="py-5 flex justify-center">
                   <Document pdf={document.certificate.asset.url} key={index} />
                 </div>
               </article>
