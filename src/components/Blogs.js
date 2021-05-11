@@ -62,7 +62,7 @@ function Blogs() {
                       alt={post.mainImage.alt}
                       className="w-full h-full rounded-r object-cover absolute"
                     />
-                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                    <span className="relative h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-md lg:text-lg px-3 py-4 bg-red-700 text-red-100 bg-opacity-75">
                         {post.title}
                       </h3>
