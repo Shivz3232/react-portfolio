@@ -42,7 +42,7 @@ function Blogs() {
           Blogs
         </h1>
         <br />
-        <h2 className="text-lg text-white flex justify-center mb-12 cursive">
+        <h2 className="text-lg text-white text-center flex justify-center mb-12 cursive">
           Welcome to my page of blog posts
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +63,7 @@ function Blogs() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75">
+                      <h3 className="text-md lg:text-lg px-3 py-4 bg-red-700 text-red-100 bg-opacity-75">
                         {post.title}
                       </h3>
                     </span>
