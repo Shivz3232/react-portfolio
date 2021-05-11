@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
@@ -11,8 +11,8 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-function About() {
-  const [author, setAuthor] = useState(null);
+function About2() {
+    const [author, setAuthor] = useState(null);
 
   useEffect(() => {
     sanityClient
@@ -35,32 +35,32 @@ function About() {
         </section>
       </main>
     );
-
-  return (
-    <main className="relative bg-black min-h-screen p-12">
-      <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-white rounded-lg shadow-2xl lg:flex p-20">
-          <img
-            src={urlFor(author.authorImage).width(200).height(200).url()}
-            alt={author.name}
-            className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
-          />
-          <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-black mb-4">
-              Hey there, I'm <span className="text-red-700">{author.name}</span>
-            </h1>
-            <div className="prose lg:prose-xl text-black">
-              <BlockContent
-                blocks={author.bio}
-                projectId="ww4grxeo"
-                dataset="production"
-              />
+    
+    return (
+        <main className="relative bg-black min-h-screen p-6 lg:p-12">
+            <div className="relative lg:p-10 lg:pt-48 container mx-auto">
+                <section className="bg-gray-400 rounded-lg shadow-2xl lg:flex p-5 lg:p-20">
+                    <img
+                        src={urlFor(author.authorImage).width(200).height(200).url()}
+                        alt={author.name}
+                        className="rounded m-auto lg:mb-auto lg:w-64 lg:h-64"
+                    />
+                    <div className="text-lg flex flex-col justify-center m-4">
+                        <h1 className="cursive text-3xl text-center lg:text-left lg:text-6xl lg:p-4 text-black">
+                            Hey there, I'm <span className="text-red-700">{author.name}</span>
+                        </h1>
+                        <div className="prose lg:prose-xl text-justify text-black font-semibold mt-2 lg:p-4">
+                            <BlockContent 
+                                blocks={author.bio}
+                                projectId="ww4grxeo"
+                                dataset="production"
+                            />
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  );
+        </main>
+    )
 }
 
-export default About;
+export default About2
