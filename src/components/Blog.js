@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
 import loadingImage from "../loading.svg";
 
 import sanityClient from "../client";
-
-const builder = imageUrlBuilder(sanityClient);
-
-function urlFor(source) {
-  return builder.image(source);
-}
 
 function Blog() {
   const [blogData, setBlog] = useState(null);
