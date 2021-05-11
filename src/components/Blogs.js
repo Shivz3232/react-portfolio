@@ -38,7 +38,7 @@ function Blogs() {
   return (
     <main className="bg-black min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl text-white flex justify-center cursive">
+        <h1 className="text-5xl text-white text-center flex justify-center cursive">
           Blogs
         </h1>
         <br />
