@@ -22,7 +22,7 @@ export default {
     {
       name: "certificate",
       title: "Certificate",
-      type: "file",
-    },
+      type: "image",
+    }
   ],
 };
