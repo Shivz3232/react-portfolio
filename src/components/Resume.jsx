@@ -59,6 +59,7 @@ const Resume = () => {
             <h2>DG Shivu</h2>
             <span>3rd year ECE</span>
             <span>CSE Junior @ PES University</span>
+            <span><a className="text-blue-500" href="https://drive.google.com/drive/folders/1X6-DgHb9nbN3hZN80fVM5PKyEBwEnIT-?usp=sharing" target="_blank" rel="noopener noreferrer">Download</a> This Resume</span>
           </div>
           <div className="contactInfo">
             <h3 className="title">Contact Me</h3>
