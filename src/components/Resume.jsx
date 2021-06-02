@@ -67,19 +67,19 @@ const Resume = () => {
                 <span className="icon">
                   <i className="fa fa-phone" aria-hidden="true" />
                 </span>
-                <span className="text">7894561237</span>
+                <span className="text">7022942665</span>
               </li>
               <li>
                 <span className="icon">
                   <i className="fas fa-envelope" aria-hidden="true" />
                 </span>
-                <span className="text">example@gmail.com</span>
+                <span className="text">dgshivu3232@gmail.com</span>
               </li>
               <li>
                 <span className="icon">
                   <i className="fab fa-linkedin" aria-hidden="true" />
                 </span>
-                <span className="text">www.linkedin.com</span>
+                <span className="text"><a href="https://www.linkedin.com/in/dgshivu">LinkedIn</a></span>
               </li>
               <li>
                 <span className="icon">
@@ -95,38 +95,38 @@ const Resume = () => {
             <ul>
               <li>
                 <span className="icon">
-                  <i className="fab fa-python" aria-hidden="true" />
+                  <i className="devicon-mysql-plain" aria-hidden="true" />
                 </span>
-                <span className="text">Python</span>
+                <span className="text">SQL</span>
                 <span className="percent">
                   <div style={{ width: "90%" }}></div>
                 </span>
               </li>
               <li>
                 <span className="icon">
-                  <i className="fab fa-cuttlefish" aria-hidden="true" />
+                  <i className="devicon-javascript-plain" aria-hidden="true" />
+                </span>
+                <span className="text">Javascript</span>
+                <span className="percent">
+                  <div style={{ width: "90%" }}></div>
+                </span>
+              </li>
+              <li>
+                <span className="icon">
+                  <i className="fab fa-python" aria-hidden="true" />
+                </span>
+                <span className="text">Python</span>
+                <span className="percent">
+                  <div style={{ width: "70%" }}></div>
+                </span>
+              </li>
+              <li>
+                <span className="icon">
+                  <i className="devicon-c-plain" aria-hidden="true" />
                 </span>
                 <span className="text">C</span>
                 <span className="percent">
-                  <div style={{ width: "75%" }}></div>
-                </span>
-              </li>
-              <li>
-                <span className="icon">
-                  <i className="fab fa-cuttlefish" aria-hidden="true" />
-                </span>
-                <span className="text">C++</span>
-                <span className="percent">
-                  <div style={{ width: "85%" }}></div>
-                </span>
-              </li>
-              <li>
-                <span className="icon">
-                  <i className="fas fa-code" aria-hidden="true" />
-                </span>
-                <span className="text">MATLAB</span>
-                <span className="percent">
-                  <div style={{ width: "80%" }}></div>
+                  <div style={{ width: "60%" }}></div>
                 </span>
               </li>
               <li>
@@ -135,7 +135,7 @@ const Resume = () => {
                 </span>
                 <span className="text">Java</span>
                 <span className="percent">
-                  <div style={{ width: "95%" }} />
+                  <div style={{ width: "60%" }}></div>
                 </span>
               </li>
             </ul>
@@ -152,35 +152,35 @@ const Resume = () => {
           <div className="about">
             <h2 className="title2">About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-              ea similique? Aperiam asperiores blanditiis ea id impedit,
-              molestiae tenetur. Amet deserunt iure nobis, non quae quia quidem.
-              Ab asperiores corporis debitis dolores esse, hic, libero nam sed
-              sit suscipit voluptatem.
+              Proactive and personable aspiring developer currently pursuing a Bachelor of
+              Technology in Computer Science and Engineering from PES University Bangalore.
               <br />
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Asperiores deleniti doloribus eligendi est libero molestiae nam,
-              nihil odio quidem quod! Asperiores autem consequuntur distinctio,
-              dolorem eos impedit incidunt minus nobis porro quaerat, quod
-              reprehenderit rerum similique voluptatem, voluptatum? Consequuntur
-              cum dolore eveniet expedita laboriosam quam quas, repellat
-              reprehenderit vero voluptates!
+              My interest revolve around how large scale projects are developed and maintained.
+              This curiosity has put me on the path to become a cloud certified proffessional.
+              After mastering how web application are built, I'm now expanding my knowledge of application and system
+              designs with the concepts of microservice
+              architecture which has given me an opportunity to explore containerisation and orchestration technology.
+              <br />
+              <br />
+              I excel at working with the team, whether it's as a member or leading the team.
+              I'm eager to face new challenges in a professional field.
+              I'm very capable of producing best result under pressure. I looking forward to hearing from you soon :)
             </p>
           </div>
           <div className="about">
-            <h2 className="title2">Experience / Volunteering</h2>
+            <h2 className="title2">Work Experience</h2>
             <div className="box">
               <div className="year_company">
-                <h5>2019 - Present</h5>
-                <h5>Company Name</h5>
+                <h5>Masko</h5>
+                <h4>2021 February - May</h4>
               </div>
               <div className="text">
-                <h4>Web Developer</h4>
+                <h4>Backend Developer</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Animi eius facere ipsa maiores nam officia, quod vitae.
-                  Aliquid, dignissimos nihil?
+                  I was responsible for realizing the APIs for the Masko Social Module.
+                  The task involved working with MERN stack. I was also responsible to update some APIs of other modules too.
+                  My internship report can be found <a href="https://docs.google.com/document/d/1NTLzl_GDlWubojotJ0liUVPZuiMaFUyVpSn4MVMJBGc/edit?usp=sharing">here</a>.
                 </p>
               </div>
             </div>
@@ -188,33 +188,33 @@ const Resume = () => {
           <div className="about skills">
             <h2 className="title2">Skills</h2>
             <div className="box">
-              <h4>Html</h4>
+              <h4>Systems Design</h4>
               <div className="percent">
-                <div style={{ width: "95%" }} />
+                <div style={{ width: "100%" }} />
               </div>
             </div>
             <div className="box">
-              <h4>css</h4>
+              <h4>DevOps</h4>
               <div className="percent">
-                <div style={{ width: "95%" }} />
+                <div style={{ width: "85%" }} />
               </div>
             </div>
             <div className="box">
-              <h4>Javascript</h4>
+              <h4>Web Development</h4>
               <div className="percent">
-                <div style={{ width: "80%" }} />
+                <div style={{ width: "95%" }} />
               </div>
             </div>
             <div className="box">
               <h4>Docker</h4>
               <div className="percent">
-                <div style={{ width: "75%" }} />
+                <div style={{ width: "85%" }} />
               </div>
             </div>
             <div className="box">
               <h4>Kubernetes</h4>
               <div className="percent">
-                <div style={{ width: "85%" }} />
+                <div style={{ width: "75%" }} />
               </div>
             </div>
             <div className="box">
@@ -224,43 +224,8 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className="about links">
-            <h2 className="title2" style={{ marginBottom: "40px" }}>
-              Profile links
-            </h2>
-            {/* <div className="wrapper">
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-facebook-f" />
-                </div>
-                <span>Facebook</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-twitter" />
-                </div>
-                <span>Twitter</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-instagram" />
-                </div>
-                <span>Instagram</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-youtube" />
-                </div>
-                <span>YouTube</span>
-              </div>
-            </div> */}
-          </div>
           <div className="credits">
-            <p>coded by Afif</p>
-            <div>
-              <i className="fab fa-github"></i>
-              <i className="fab fa-linkedin-in"></i>
-            </div>
+            <p>/resume coded by <a href="https://www.github.com/Afif1400">Afif <i className="fab fa-github"></i></a></p>
           </div>
         </div>
       </div>
