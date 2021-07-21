@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import P5Wrapper from "react-p5-wrapper";
+import Sketch from "./Sketch";
 
 function Home() {
     useEffect(() => {
@@ -6,10 +8,12 @@ function Home() {
     }, []);
 
     return (
-        <div className="flex justify-center w-full min-h-screen bg-black">
-            <h1 className="m-auto font-bold text-center text-white text-5xl lg:text-9xl">
+        <div className="relative flex justify-center w-full min-h-screen bg-black">
+            <P5Wrapper sketch={Sketch} />
+            <h1 className="absolute m-auto font-bold text-center text-white text-5xl lg:text-9xl top-1/2 right-1/2 transform translate-x-1/2 -translate-y-1/2">
                 Namaste. I'm Shivu.
             </h1>
+
         </div>
     )
 }
