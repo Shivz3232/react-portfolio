@@ -57,6 +57,15 @@ function NavBar() {
                             </li>
                             <li>
                                 <NavLink
+                                    to="/OnlyFans"
+                                    activeClassName="text-red-900"
+                                    className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                >
+                                    OnlyFans
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
                                     to="/about"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"

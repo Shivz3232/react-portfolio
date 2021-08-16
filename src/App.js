@@ -8,6 +8,7 @@ import Project from "./components/Project";
 import NavBar from "./components/NavBar";
 import Certificates from "./components/Certificates"
 import  Resume  from "./components/Resume";
+import OnlyFans from "./components/OnlyFans";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route component={Project} path="/project" />
         <Route component={Certificates} path="/certificates" />
         <Route component={Resume} path="/resume" />
+        <Route component={OnlyFans} path="/OnlyFans" />
       </Switch>
     </BrowserRouter>
   );
