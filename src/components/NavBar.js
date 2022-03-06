@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons'
 
 function NavBar() {
+    const closeMenu = (e) => {
+        const checkBox = document.getElementById("menu-toggle");
+        checkBox.checked = false;
+    }
+    
     return (
         <div className="antialiased bg-black">
             <header className="lg:px-16 px-6 bg-bloack flex flex-wrap items-center lg:py-0 py-2">
@@ -24,6 +29,7 @@ function NavBar() {
                                     to="/blogs"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
                                     activeClassName="text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     Blogs
                                 </NavLink>
@@ -33,6 +39,7 @@ function NavBar() {
                                     to="/project"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     Projects
                                 </NavLink>
@@ -42,6 +49,7 @@ function NavBar() {
                                     to="/certificates"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     Certificates
                                 </NavLink>
@@ -51,6 +59,7 @@ function NavBar() {
                                     to="/resume"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     Resume
                                 </NavLink>
@@ -60,6 +69,7 @@ function NavBar() {
                                     to="/OnlyFans"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     OnlyFans
                                 </NavLink>
@@ -69,6 +79,7 @@ function NavBar() {
                                     to="/about"
                                     activeClassName="text-red-900"
                                     className="my-6 inline-flex items-center py-3 px-3 rounded text-white font-bold hover:text-red-900"
+                                    onClick={closeMenu}
                                 >
                                     About
                                 </NavLink>
